@@ -4,18 +4,22 @@
   color: gainsboro;
    align-items: center;
    font-size: 15px;
+   
 }
 .footer-nav {
 height: 100px;
 background-color: lightskyblue;
 padding: 10px 0;
 display: flex;
- justify-content: space-around;
+justify-content: space-around;
+ 
 }
 
 .footer-content-head {
   display: flex;
-  padding: 10px 0;
+  padding: 15px 0;
+  text-shadow: 0 0 9px rgba(10, 10, 11, 0.9);
+
 }
 
 .copyright {
