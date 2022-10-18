@@ -1,0 +1,58 @@
+<%= render "shared/header" %>
+
+<div class="pets-reg-main">
+    <h2 class="pets-reg-title">商品の情報を入力</h2>
+<%= form_with model: @pet, url:pets_path, local: true do |f| %>
+     <%= render 'shared/error_messages', model: f.object %>
+
+<div class="img-upload">
+      <div class="weight-bold-text">
+        ペットの写真
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+           <div id="previews"></div> 
+             <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"pet-image" %>
+      </div>
+</div>
+ 
+ <div class="new-pets">
+      <div class="weight-bold-text">
+        ペットのニックネーム
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, class:"pets-text", id:"pet-name", placeholder:"例）ジェマ（必須 40文字まで)", maxlength:"40" %>
+      <div class="weight-bold-text">
+        ペットの書類
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :pettype, class:"pets-text", id:"pet-name", placeholder:"例）わんちゃん（必須 40文字まで)", maxlength:"40" %>
+     性別
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"select-box", id:"pet-gender"}) %>
+       
+      <div class="pets-explain">
+        <div class="weight-bold-text">
+          ペットについての情報
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :information, class:"pets-text", id:"pet-info", placeholder:"性格、特徴、好きなものなど。例）ジェマは白黒の3歳のワンちゃんです。近くの公園の散歩と餌が好きです！他の犬と遊ぶのが大好きです。" ,rows:"7" ,maxlength:"1000" %>
+        <div class="reg-btn-contents">
+      
+      
+      <%= f.submit "登録する" ,class:"reg-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+</div></div>
+    
+    </div>
+
+
+ 
+
+ 
+<% end %>
+<%= render "shared/footer" %>

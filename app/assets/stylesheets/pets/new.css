@@ -1,0 +1,154 @@
+/* border-bottom: 1px solid #eee; */
+
+.pets-reg-contents {
+  background-color: #f5f5f5;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.pets-reg-header {
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.pets-reg-main {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 450px;
+  padding: 10vh 15vw;
+}
+
+.pets-reg-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.weight-bold-text {
+  font-weight: bold;
+  min-width: 170px;
+  margin-bottom: 10px;
+}
+
+.select-box {
+  height: 30px;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+}
+
+.question {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #0099e8;
+  color: #FFF;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.question-text {
+  display: flex;
+}
+
+.img-upload {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.click-upload {
+  margin: 15px 0;
+  min-width: 250px;
+}
+
+.click-upload>p {
+  margin-bottom: 15px;
+}
+
+.new-pets {
+  padding: 2vh 0;
+}
+
+.pets-text {
+  width: 100%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.pets-explain {
+  margin-top: 2vh;
+}
+
+.pets-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+
+.pets-detail>.form {
+  width: 300px;
+  padding: 2vh 0;
+}
+
+.select-box {
+  margin: 2vh 0;
+}
+
+.caution {
+  padding: 5vh 0;
+}
+
+.sentence>a {
+  color: #0099e8;
+  text-decoration: none;
+}
+
+.reg-btn-contents {
+  width: 100%;
+  text-align: center;
+}
+
+.reg-btn {
+  background: lightblue;
+  border: 1px solid lightskyblue;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  margin-bottom: 4vh;
+}
+
+.back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 35%;
+  text-decoration: none;
+}
+
+
+.inc {
+  font-size: 13px;
+}

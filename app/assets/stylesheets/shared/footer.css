@@ -1,0 +1,26 @@
+.footer {
+  height: 50px;
+  background-color: #f0f0f0;
+  color: gray;
+   align-items: center;
+}
+.footer-nav {
+height: 100px;
+background-color: #f0f0f0;
+padding: 10px 0;
+display: flex;
+ justify-content: space-around;
+}
+
+.footer-content-head {
+  display: flex;
+  padding: 10px 0;
+}
+
+.copyright {
+  line-height: 70px;
+  text-align: center;
+  font-size: 16px;
+  color: #959393;
+}
+
