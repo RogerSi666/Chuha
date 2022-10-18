@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+.pet-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.pet-contents>.name {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+  color: rgb(60, 56, 132);
+}
+.pet-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pet-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+  margin: 20px 20px 20px 20px;
+}
+
+.pet-name {
+ color:rgb(18, 18, 23);
+  font-size: 2.5vh;
+}
+.pet-img-content {
+  position: relative;
+}
+
+.pet-img {
+  width: 45vh;
+  height: 45vh;
+}

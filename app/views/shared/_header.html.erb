@@ -10,7 +10,7 @@
    <div class="navbar">
     <ul class='nav-lists'>
       <% if user_signed_in? %>
-      <li><%= link_to current_user.nickname, "/users/#{current_user.id}", class: "link"  %>さん、こんにちは！</li>
+      <li class="header-text"><%= link_to current_user.nickname, "/users/#{current_user.id}", class: "link"  %>さん、こんにちは！</li>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "link" %></li> 
       <li><%= link_to "ペットを登録する", new_pet_path, class: "link" %>
       <% else %>

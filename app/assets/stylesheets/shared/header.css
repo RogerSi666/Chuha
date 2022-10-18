@@ -1,6 +1,6 @@
 .top-page-header {
-  height: 50px;
-  background-color: lightblue;
+  height: 70px;
+  background-color: lightskyblue;
   padding: 10px 0;
   display: flex;
 }
@@ -21,6 +21,12 @@
 
 a {
   list-style: none;
+  color: whitesmoke;
+}
+
+.header-text {
+  list-style: none;
+  color: whitesmoke;
 }
 
 .logo {
