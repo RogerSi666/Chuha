@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2022_10_18_115040) do
 
   create_table "pets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
-    t.string "pettype", null: false
+    t.string "pet_kind", null: false
     t.text "information", null: false
     t.integer "gender_id", null: false
     t.bigint "user_id", null: false
