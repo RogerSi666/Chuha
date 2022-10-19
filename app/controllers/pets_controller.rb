@@ -2,7 +2,7 @@ class PetsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_pet, only: [:show, :edit, :update, :destroy]
   before_action :redirect, only: [:destroy, :edit]
-  
+
   def index
     @pets = Pet.includes(:user).all.order('created_at DESC')
   end
@@ -21,11 +21,10 @@ class PetsController < ApplicationController
   end
 
   def show
-
   end
 
   def edit
-    if @pet.user_id == current_user.id 
+    if @pet.user_id == current_user.id
     else
       redirect_to root_path
     end
@@ -46,19 +45,16 @@ class PetsController < ApplicationController
   end
 
   private
+
   def set_pet
     @pet = Pet.find(params[:id])
   end
 
   def redirect
-    if current_user.id != @pet.user.id
-      redirect_to action: :index 
-    else
-    end
+    redirect_to action: :index if current_user.id != @pet.user.id
   end
 
   def pet_params
-    params.require(:pet).permit(:name, :information, :gender_id, :pet_kind, :image).merge(user_id:current_user.id)
+    params.require(:pet).permit(:name, :information, :gender_id, :pet_kind, :image).merge(user_id: current_user.id)
   end
-
 end
