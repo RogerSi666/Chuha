@@ -10,12 +10,23 @@
 </div>
 <h2 class="heading-name">登録されているペット</h2>
 
-
-<div class="pet-lists">
-
-   
-  
-  <% end %>
+<div class='pet-contents'>
+<ul class='pet-lists'>
+      <% @pets.each do |pet| %>
+      <li class='list'>
+        <%= link_to pet_path(pet.id) do %>
+        <div class='pet-img-content'>
+          <%= image_tag pet.image, class: "pet-img"%>
+     </div>
+        <div class='pet-info'>
+          <h3 class='pet-name'>
+            <%= pet.pettype %>:<%= pet.name %>
+          </h3>
+        </div>
+        <% end %>
+         </li>
+    <% end %>
+ </ul>
 </div>
 
 <%= render "shared/footer" %>
