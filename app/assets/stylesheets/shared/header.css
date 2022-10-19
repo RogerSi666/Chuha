@@ -1,6 +1,6 @@
 .top-page-header {
   height: 70px;
-  background-color: lightskyblue;
+  background-color: #ffe9a5;
   padding: 10px 0;
   display: flex;
 }
@@ -8,6 +8,8 @@
   width: 50%;
   margin-left: 30px;
 }
+
+
 
 .navbar {
   width: 50%;
@@ -20,23 +22,24 @@
 }
 
 a {
-  list-style: none;
-  color: whitesmoke;
+  color: #6d7d90;
 }
 
 .header-text {
   list-style: none;
-  color: whitesmoke;
+  color: #6d7d90;
 }
 
-.logo {
+#logo {
+  list-style: none;
+  text-decoration: none;
     font-size: 40px;  
     font-weight: bold;
-    color: #FFFFFF;
+    color: #6d7d90;
   }
 
   .slogan {
     font-size: 14px;  
   font-weight: bold;
-  color: #FFFFFF;
+  color: #6d7d90;
   }

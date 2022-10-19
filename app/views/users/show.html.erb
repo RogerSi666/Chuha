@@ -1,0 +1,31 @@
+<%= render "shared/header" %>
+
+ <div class='pet-contents'>
+    <div class="subtitle" >
+     <%= @nickname %>さんのペット
+    </div>
+    
+    <ul class='pet-lists'>
+      <% @pets.each do |pet| %>
+      <li class='list'>
+        <%= link_to pet_path(pet.id) do %>
+        <div class='pet-img-content'>
+          <%= image_tag pet.image, class: "pet-img"%>
+        </div>
+        <div class='pet-info'>
+          <h3 class='pet-name'>
+            <%= pet.name %>
+          </h3>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+
+ <% if @pets.blank? then %>
+      ...まだペットを飼っていません...
+   <% end %>   
+</div>
+
+
+<%= render "shared/footer" %>

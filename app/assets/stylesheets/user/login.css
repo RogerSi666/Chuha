@@ -7,8 +7,8 @@
 .login-red-btn {
   margin-top: 10px;
   width: 110%;
-  background: lightblue;
-  border: 1px solid lightblue;
+  background: #d7e6d5;
+  border: 1px solid #d7e6d5;
   color: #fff;
   line-height: 48px;
   font-size: 14px;
@@ -17,5 +17,5 @@
 
 .login-flash-message {
   text-align: center;
-  color: lightblue;
+  color: #d7e6d5;
 }

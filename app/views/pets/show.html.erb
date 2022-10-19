@@ -1,0 +1,40 @@
+<%= render "shared/header" %>
+
+<div class="pet-show">
+  <div class="pet-box">
+    <h2 class="name">
+      <a class= "user-pet" href="/users/<%= @pet.user.id %>"><%= @pet.user.nickname %>    </a>さんの
+<%= @pet.name %>
+    </h2>
+    <div class="pet-img-content">
+      <%= image_tag @pet.image ,class:"pet-box-img" %>
+    </div>
+      <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-pet">ペットの性別</th>
+          <td class="detail-value"><%= @pet.gender.name %></td>
+        </tr><th class="detail-pet">ペットの書類</th>
+          <td class="detail-value"><%= @pet.pet_kind %></td>
+        </tr>
+          
+      </tbody>
+ </table>
+ <div class="pet-explain-box">
+      <span><%= @pet.information %></span>
+    </div>
+<% if user_signed_in? %> 
+    <% if current_user.id == @pet.user_id %>
+    <%= link_to "情報の編集", edit_pet_path(@pet), method: :get, class: "pet-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", pet_path(@pet), method: :delete, class:"pet-destroy" %>
+    <% else user_signed_in? && current_user.id  != @pet.user_id %>
+    <%= link_to "いいね", "#" ,class:"pet-red-btn"%>
+<% end %>
+<% end %>
+    
+</div>
+    </form>
+  </div>
+
+<%= render "shared/footer" %>

@@ -26,10 +26,10 @@
   height: 65px;
   margin: 40px auto;
   font-size: 30px;
-  background-color: lightblue;
+  background-color: #d7e6d5;
   color: white;
   text-align: center;
-  text-shadow: 0 0 9px rgba(10, 10, 11, 0.9);
+  text-shadow: 0 0 9px rgba(145, 175, 159, 0.9);
 
 }
 .dog-image {
@@ -43,7 +43,7 @@
 
 .explain {
   position: relative;
-  width: 1366px;
+  width: 100%;
 }
 
 .explain-texts {
@@ -71,5 +71,11 @@ a {
   text-decoration: none;
   color: rgb(12, 31, 37);
   text-shadow: 0 0 5px rgba(242, 235, 235, 0.9);
+}
 
+.subtitle {
+  color: #6d7d90;
+  border-bottom: 1px solid #91af9f;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
