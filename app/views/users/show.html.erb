@@ -27,5 +27,20 @@
    <% end %>   
 </div>
 
+<div class="contents row">
+  <% @posts.each do |post| %>
+    <div class="content_post" > 
+   
+    <span class="post-title">
+        <%= post.post_title %>
+           
+      </span> <br>     by <a class= "user-pet" href="/users/<%= post.user.id %>"><%= post.user.nickname %>    </a>
+      <p class="post-texts"><%= post.post_text %></p>
+           <%= link_to "詳細", post_path(post.id) %>
+    </div> 
+    
+  <% end %>
+</div>
+
 
 <%= render "shared/footer" %>
