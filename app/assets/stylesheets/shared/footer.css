@@ -4,6 +4,7 @@
   color: #6d7d90;
    align-items: center;
    font-size: 15px;
+   width: 100%;
    
 }
 .footer-nav {
@@ -12,6 +13,7 @@ background-color: #ffe9a5;
 padding: 10px 0;
 display: flex;
 justify-content: space-around;
+width: 100%;
  
 }
 

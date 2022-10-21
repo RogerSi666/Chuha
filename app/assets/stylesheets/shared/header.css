@@ -3,6 +3,7 @@
   background-color: #ffe9a5;
   padding: 10px 0;
   display: flex;
+  width: 100%;
 }
 .heading {
   width: 50%;
