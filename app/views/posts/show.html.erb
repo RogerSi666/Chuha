@@ -25,14 +25,14 @@
     <% if user_signed_in? %>
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
         <%= form.text_area :comment_text, placeholder: "コメントする", rows: "2" %>
-       <div class="comment-submit"> <%= form.submit "コメントする" %></div>
+       <div class="com-contents">
+        <%= form.submit "コメントする", class:"reg-btn"%>
+        </div>
       <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+
     <% end %>
      <div class="comments">
 
-      <h4>＜コメント一覧＞</h4>
       <% @comments.each do |comment| %>
         <p class="comment">
          <p class="user-info"> <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：

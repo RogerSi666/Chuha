@@ -77,7 +77,6 @@ https://docs.google.com/spreadsheets/d/1li_0V2hM8GV6OnBsyFAyQgEaCmWhTJ626JmmyGsJ
 | Column           | Type       | Options                        |
 | ---------------- | ------     | -------------------------------|
 | name             | string     | null: false                    |
-| birthday         | date       | null: false               |
 | gender_id        | integer    | null: false                    |
 | type             | string     | null: false                    |
 | information      | text       | null: false                    |
@@ -95,6 +94,7 @@ https://docs.google.com/spreadsheets/d/1li_0V2hM8GV6OnBsyFAyQgEaCmWhTJ626JmmyGsJ
 | text       | text       | null: false                    |
 | user       | references | null: false, foreign_key: true |
 
+
 ### Association
 
 - belongs_to :user
@@ -107,8 +107,15 @@ https://docs.google.com/spreadsheets/d/1li_0V2hM8GV6OnBsyFAyQgEaCmWhTJ626JmmyGsJ
 | comment_text       | text       | null: false                    |
 
 
-
 ### Association
 
 - belongs_to :user
 - belongs_to :post
+
+# clone
+
+% git clone  https://github.com/RogerSi666/Chuha.git <br>
+% cd furima-38008 <br>
+% bundle install <br>
+% rails db:create <br>
+% rails db:migrate
