@@ -33,44 +33,49 @@ https://docs.google.com/spreadsheets/d/1li_0V2hM8GV6OnBsyFAyQgEaCmWhTJ626JmmyGsJ
 ## 実装機能
 
 1.ユーザー登録機能
-ユーザー登録することでペット登録、ポスト、コメント投稿できるようになります。（ユーザー登録していない人でも投稿しているペット、コメント、ポストを見ることができます。。）マイページで特定のユーザーがつぶやいたペットやポスト一覧を取得する。
+ユーザー登録することでペット登録、ポスト、コメント投稿できるようになります。（ユーザー登録していない人でも投稿しているペット、コメント、ポストを見ることができます。）
 
 [![Image from Gyazo](https://i.gyazo.com/cea5702b58dfb688d829ca4b70a9ae4d.gif)](https://gyazo.com/cea5702b58dfb688d829ca4b70a9ae4d)
 [![Image from Gyazo](https://i.gyazo.com/58dc367782758933e8b96b8d43e052d8.gif)](https://gyazo.com/58dc367782758933e8b96b8d43e052d8)
 
-2.ペット登録機能
+2.マイページ機能
+マイページで特定のユーザーがつぶやいたペットやポスト一覧を取得する。
+
+[![Image from Gyazo](https://i.gyazo.com/66951038bce60142b6b15da7a5b53a87.gif)](https://gyazo.com/66951038bce60142b6b15da7a5b53a87)
+
+23.ペット登録機能
 商品画像を選択し、商品情報や販売したい金額を入力すると、出品することができます。（JavaScriptで販売手数料が表示されるようになっています。）
 
 [![Image from Gyazo](https://i.gyazo.com/9b380887ba00bb0e12d1715d71271acc.gif)](https://gyazo.com/9b380887ba00bb0e12d1715d71271acc)
 
-3.ペットの情報編集機能
+4.ペットの情報編集機能
 出品した商品について、編集することができます。その際に、ユーザーの手間を省くため出品時の情報が表示されるようになっています。
 
 https://gyazo.com/d7d29d4c8da58a7973bbb161075882f9
 
-4.ペット削除機能
+5.ペット削除機能
 出品中であった商品について、削除ボタンを押すことで商品を削除することができます。
 
 [![Image from Gyazo](https://i.gyazo.com/91da8f45a69d4fb788211b56ffa64a6d.gif)](https://gyazo.com/91da8f45a69d4fb788211b56ffa64a6d)
 
-５.ポスト投稿機能
+6.ポスト投稿機能
 商品画像を選択し、商品情報や販売したい金額を入力すると、出品することができます。（JavaScriptで販売手数料が表示されるようになっています。）
 
 [![Image from Gyazo](https://i.gyazo.com/cd3e0a7ae65899ef53f8f40858ff4df6.gif)](https://gyazo.com/cd3e0a7ae65899ef53f8f40858ff4df6)
 [![Image from Gyazo](https://i.gyazo.com/a19f54f47c56ddd75243d7c78193f012.gif)](https://gyazo.com/a19f54f47c56ddd75243d7c78193f012)
 
 
-６.ポスト編集機能
+7.ポスト編集機能
 出品した商品について、編集することができます。その際に、ユーザーの手間を省くため出品時の情報が表示されるようになっています。
 
 [![Image from Gyazo](https://i.gyazo.com/5ffbc2f4285f4ece018895b31bff0809.gif)](https://gyazo.com/5ffbc2f4285f4ece018895b31bff0809)
 
-7.ポスト削除機能
+8.ポスト削除機能
 出品中であった商品について、削除ボタンを押すことで商品を削除することができます。
 
 [![Image from Gyazo](https://i.gyazo.com/ee151329551a3756b28b51f5cc095274.gif)](https://gyazo.com/ee151329551a3756b28b51f5cc095274)
 
-8.コメント機能
+9.コメント機能
 商品詳細ページでコメントを投稿すると、リロードすることなくコメントが反映される。別のブラウザで同じ商品を開いていた場合も、リロードすることなくコメントが反映される"。
 
 [![Image from Gyazo](https://i.gyazo.com/9cc3b94642bb9120617bd8dbe2b9c573.gif)](https://gyazo.com/9cc3b94642bb9120617bd8dbe2b9c573)
