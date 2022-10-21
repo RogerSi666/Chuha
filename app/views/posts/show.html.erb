@@ -24,7 +24,7 @@
 <div class="comment-form">
     <% if user_signed_in? %>
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
-        <%= form.text_area :comment_text, placeholder: "コメントする", rows: "2" %>
+       <div class="com-space"> <%= form.text_area :comment_text, placeholder: "コメントする", class: "com-insert", rows: "2" %><div>
        <div class="com-contents">
         <%= form.submit "コメントする", class:"reg-btn"%>
         </div>
@@ -40,5 +40,7 @@
         </p>
       <% end %>
     </div>
+  </div>
+  </div>
   </div>
 <%= render "shared/footer" %>
