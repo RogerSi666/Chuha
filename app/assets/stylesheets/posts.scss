@@ -1,0 +1,79 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-text {
+    width: 100%;
+    padding: 16px 16px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+    height: 150px;
+
+}
+
+.content_post {
+
+    display: block;
+    margin: 40px 40px 40px 40px;
+    background-color: #d7e5d5;
+}
+.user-pet {
+    text-decoration: none;
+    color: black;
+
+}
+.post-texts {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 16px 16px 8px;
+    letter-spacing: 1px;
+}
+.pet-img {
+  width: 45vh;
+  height: 45vh;
+}
+.message-image {
+    height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: #d7e5d5;
+  object-fit: contain;
+  margin-top: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.post-title {
+    font-size: 19px;
+    font-weight: bold;
+    color: #6d7d90;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+    letter-spacing: .2rem;
+    padding-left: 50px;
+}
+
+.buttons {
+    display: flex;
+}
+.post-edit {
+    margin-left:20px;
+    margin-right: 10px;
+}
+
+.post-delete {
+    margin-left:20px;
+    margin-right: 10px;
+    padding-left:20px;
+
+}
+
+.el {
+    margin-right: 10px;
+    color: black;
+}
+
+.by {
+    color: black;
+}

@@ -28,3 +28,8 @@ justify-content: space-around;
   color: #6d7d90;
 }
 
+a.hover {
+  text-shadow: 0 0 9px rgba(145, 175, 159, 0.9);
+
+}
+

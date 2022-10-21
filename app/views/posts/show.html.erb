@@ -1,0 +1,44 @@
+<%= render "shared/header" %>
+
+<div class="contents row">
+    <div class="content_post" > 
+    <span class="post-title">
+        <%= @post.post_title %>
+        <br>    by <a class= "user-pet" href="/users/<%= @post.user.id %>"><%= @post.user.nickname %>    </a>
+           
+      </span>
+      <p class="post-texts"><%= @post.post_text %></p>  
+               <div> <%= image_tag @post.image, class: "message-image" if @post.image.attached? %> </div>
+
+     <% if user_signed_in? %> 
+    <% if current_user.id == @post.user_id %>
+<div class="buttons">
+    <%= link_to "編集", edit_post_path(@post), method: :get, class: "post-edit" %>
+    <p class="or-text"><span class="el">or</span></p>
+    <%= link_to "削除", post_path(@post), method: :delete, class:"post-destroy" %></div>
+    <% else user_signed_in? && current_user.id  != @post.user_id %>
+<% end %>
+<% end %>
+    </div>
+</div>
+<div class="comment-form">
+    <% if user_signed_in? %>
+      <%= form_with(model: [@post, @comment], local: true) do |form| %>
+        <%= form.text_area :comment_text, placeholder: "コメントする", rows: "2" %>
+       <div class="comment-submit"> <%= form.submit "コメントする" %></div>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+     <div class="comments">
+
+      <h4>＜コメント一覧＞</h4>
+      <% @comments.each do |comment| %>
+        <p class="comment">
+         <p class="user-info"> <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：
+         </strong></p> <p class="comment-text"> <%= comment.comment_text %></p>
+        </p>
+      <% end %>
+    </div>
+  </div>
+<%= render "shared/footer" %>

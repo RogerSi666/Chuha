@@ -5,14 +5,20 @@
 
 <div class="heading">
 <%=link_to 'HACHUHA', root_path, id:"logo" %>
-<h2 class="slogan">ペットと出会えるところ</h2></div>
+<h2 class="slogan">ペットと出会えるところ</h2>
+
+</div>
    
    <div class="navbar">
-    <ul class='nav-lists'>
+    <ul class='nav-lists'><div> 
+    <%=  link_to 'ポスト', posts_path, class: "footer-link" %></div>
       <% if user_signed_in? %>
+      
       <li class="header-text"><%= link_to current_user.nickname, "/users/#{current_user.id}", class: "link"  %>さん、こんにちは！</li>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "link" %></li> 
       <li><%= link_to "ペットを登録する", new_pet_path, class: "link" %>
+       <li><%= link_to "ポストを投稿する", new_post_path, class: "link" %>
+
       <% else %>
       <li> <%= link_to 'ログイン', new_user_session_path, method: :get, class: "link" %></li>
       <li class="link"> <%= link_to '新規登録', new_user_registration_path, class: "link" %></li>

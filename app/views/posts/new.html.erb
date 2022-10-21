@@ -1,0 +1,46 @@
+<%= render "shared/header" %>
+
+<div class="pets-reg-main">
+    <h2 class="pets-reg-title">ポスト入力</h2>
+<%= form_with model: @post, url:posts_path, local: true do |f| %>
+     <%= render 'shared/error_messages', model: f.object %>
+
+<div class="img-upload">
+      <div class="weight-bold-text">
+        画像
+        <span class="indispensable">任意</span>
+      </div>
+      <div class="click-upload">
+           <div id="previews"></div> 
+             <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"pet-image" %>
+      </div>
+</div>
+ 
+ <div class="new-pets">
+      <div class="weight-bold-text">
+        タイトル
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :post_title, class:"pets-text", id:"pet-name", placeholder:"例）秋に散歩する一番いい公園　ー　５", maxlength:"40" %>
+      <div class="pets-explain">
+        <div class="weight-bold-text">
+          テキスト
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :post_text, class:"post-text", id:"pet-info", placeholder:"例）秋の始まりです！ワンちゃんと散歩する際に。。。" %>
+        <div class="reg-btn-contents">
+      
+      
+      <%= f.submit "登録する" ,class:"reg-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+</div>
+    </div>
+   </div>
+   </div>
+<% end %>
+
+
+<%= render "shared/footer" %>
