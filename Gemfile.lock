@@ -148,10 +148,13 @@ GEM
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    nokogiri (1.13.8-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
+    pg (1.4.5)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -279,6 +282,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   active_hash
@@ -296,6 +300,7 @@ DEPENDENCIES
   net-imap
   net-pop
   net-smtp
+  pg
   pry-rails
   puma (~> 3.11)
   rails (~> 6.0.0)
